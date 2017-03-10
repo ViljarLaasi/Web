@@ -11,7 +11,13 @@ public class Rakendus {
     String tervitusfunktsioon() {
         return "Ahoi!";
     }
-		String eesnimi="Jukku";
+	@RequestMapping("/geomeetriline_keskmine")
+		String gk(String arv1, String arv2){
+			if(arv1==null){return "andmed puuduvad";}
+			int a1=Integer.parseInt(arv1);
+			int a1=Integer.parseInt(arv2);
+			return arv1+"ja"+arv2+"geomeetriline keskmine on " +Math.sqrt(a1*a2);
+		}
 	@RequestMapping("/tervita")
 	  	String tervitusfunktsioon3(String eesnimi) {
 	        return "Tere," +eesnimi;
