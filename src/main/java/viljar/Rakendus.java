@@ -11,10 +11,10 @@ public class Rakendus {
     String tervitusfunktsioon() {
         return "Ahoi!";
     }
-	@RequestMapping("/tervita")
-	    String tervitusfunktsioon3(String eesnimi) {
-	        return "Tere," +eesnimi;
-	    }
+	//@RequestMapping("/tervita")
+	  //  String tervitusfunktsioon3(String eesnimi) {
+	    //    return "Tere," +eesnimi;
+	    //}
 
 
     public static void main(String[] args) {
