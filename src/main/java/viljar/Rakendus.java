@@ -12,7 +12,7 @@ public class Rakendus {
         return "Ahoi!";
     }
 	@RequestMapping("/geomeetriline_keskmine")
-		String gk(String arv1, String arv2){
+		String gk(String arv1, String arv2, String arv3){
 			if(arv1==null){return "andmed puuduvad";}
 			int a1=Integer.parseInt(arv1);
 			int a2=Integer.parseInt(arv2);
