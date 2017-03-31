@@ -12,13 +12,19 @@ public class Rakendus {
         return "Ahoi!";
     }
 	@RequestMapping("/geomeetriline_keskmine")
-		String gk(String arv1, String arv2, String arv3){
+		String gk(String arv1, String arv2, String arv3, String arv4, String arv5, String arv6,String arv7, String arv8, String arv9){
 			if(arv1==null){return "andmed puuduvad";}
 			int a1=Integer.parseInt(arv1);
 			int a2=Integer.parseInt(arv2);
 			int a3=Integer.parseInt(arv3);
+			int b1=Integer.parseInt(arv4);
+			int b2=Integer.parseInt(arv5);
+			int b3=Integer.parseInt(arv6);
+			int c1=Integer.parseInt(arv7);
+			int c2=Integer.parseInt(arv8);
+			int c3=Integer.parseInt(arv9);
 
-			return arv1+"ja "+arv2+" geomeetriline keskmine on " + Math.round(Math.sqrt(Math.pow(a1,2)+Math.pow(a2,2))) +"kolme arvu keskmine aga on "+(a1+a2+a3)*3 ;
+			return "Determinant on "+a1*b2*c3+a2*b3*c1+a3*b1*c2-a3*b2*c1-a1*b3*c2-a2*b1*c3 ;
 		}
 
 

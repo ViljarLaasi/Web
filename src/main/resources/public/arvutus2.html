@@ -9,7 +9,13 @@
     var a1=document.getElementById("kast1").value;
     var a2=document.getElementById("kast2").value;
     var a3=document.getElementById("kast3").value;
-    var aadress="/geomeetriline_keskmine?arv1="+a1+"&arv2="+a2+"&arv3="+a3;
+    var b1=document.getElementById("kast4").value;
+    var b2=document.getElementById("kast5").value;
+    var b3=document.getElementById("kast6").value;
+    var c1=document.getElementById("kast7").value;
+    var c2=document.getElementById("kast8").value;
+    var c3=document.getElementById("kast9").value;
+    var aadress="/geomeetriline_keskmine?arv1="+a1+"&arv2="+a2+"&arv3="+a3+"&arv4="+b1+"&arv5="+b2+"&arv6="+b3+"$arv7="+c1+"&arv8="+c2+"&arv9="+c3;
     yhendus.open("GET", aadress, true);
     yhendus.send();
   }
@@ -20,11 +26,19 @@
   </script>
 </head>
 <body>
-  <input type="number" id="kast1" placeholder="Esimene number">
+  <input type="number" id="kast1" placeholder="i">
+  <input type="number" id="kast2" placeholder="j">
+  <input type="number" id="kast3" placeholder="k">
   <br></br>
-  <input type="number" id="kast2" placeholder="Teine number">
-  <input type="number" id="kast3" placeholder="Kolmas number">
-  <input type="button" value="Leia geomeetriline keskmine" onclick="arvutamine()"/>
-  <div id="vastus">Vastuse koht</div>
+  <input type="number" id="kast4" placeholder="a1">
+  <input type="number" id="kast5" placeholder="a2">
+  <input type="number" id="kast6" placeholder="a3">
+  <br></br>
+  <input type="number" id="kast7" placeholder="b1">
+  <input type="number" id="kast8" placeholder="b2">
+  <input type="number" id="kast9" placeholder="b3">
+  <br></br>
+  <input type="button" value="Vektrokorrutis" onclick="arvutamine()"/>
+  <div id="vastus">Vektorkorrutis</div>
 </body>
 </html>
