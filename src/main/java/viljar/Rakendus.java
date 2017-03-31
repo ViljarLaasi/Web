@@ -18,7 +18,8 @@ public class Rakendus {
 			int a2=Integer.parseInt(arv2);
 			return arv1+"ja"+arv2+"geomeetriline keskmine on " +a1*a2;
 		}
-	
+
+
 
     public static void main(String[] args) {
 		//System.getProperties().put("server.port", 35878);
