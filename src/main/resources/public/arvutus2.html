@@ -21,8 +21,9 @@
     var c2=document.getElementById("kast8").value;
     var c3=document.getElementById("kast9").value;
     console.log(a1);
+    console.log(a3);
 
-    console.log(a1);
+
     var aadress="/determinant?arv1="+a1+"&arv2="+a2+"&arv3="+a3+"&arv4="+b1+"&arv5="+b2+"&arv6="+b3+"&arv7="+c1+"&arv8="+c2+"&arv9="+c3;
     yhendus.open("GET", aadress, true);
     yhendus.send();
@@ -34,7 +35,7 @@
   </script>
 </head>
 <body>
-  <input type="number" id="kast1" placeholder="i" value= "5">
+  <input type="number" id="kast1" >
   <input type="number" id="kast2" placeholder="j" value= "4">
   <input type="number" id="kast3" placeholder="k" value= "6">
   <br></br>
