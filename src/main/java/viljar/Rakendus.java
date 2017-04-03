@@ -22,7 +22,7 @@ public class Rakendus {
 				int c2=Integer.parseInt(arv8);
 				int c3=Integer.parseInt(arv9);
 			if(arv1==""){
-				return "Vektorkorrutis ";//+ (b2*c3-b3*c2)+"j"+(b3*c1-b1*c3)+"k"+(b1*c2-b2*c1);
+				return "Vektorkorrutis "+ (b2*c3-b3*c2)+"j"+(b3*c1-b1*c3)+"k"+(b1*c2-b2*c1);
 			} else {
 
 				return "Determinant "+ (a1*b2*c3+a2*b3*c1+a3*b1*c2-a3*b2*c1-a1*b3*c2-a2*b1*c3);
